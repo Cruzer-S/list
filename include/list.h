@@ -8,6 +8,9 @@
 #define LIST_ENTRY_IS_HEAD(HEAD, POS, MEMBER)				\
 	LIST_IS_HEAD((HEAD), &POS->MEMBER)
 
+#define LIST_ENTRY_IS_LAST(HEAD, POS, MEMBER)				\
+	LIST_IS_LAST((HEAD), &POS->MEMBER)
+
 #define LIST_FOREACH(HEAD, POS) 					\
 	for (struct list *POS = (HEAD)->next;				\
 	     (HEAD) != (POS);						\
