@@ -1,6 +1,8 @@
 #ifndef LIST_H__
 #define LIST_H__
 
+#include <stddef.h> // offsetof
+
 #define LIST_IS_LAST(HEAD, POS) ((POS)->next == (HEAD))
 #define LIST_IS_EMPTY(HEAD)	((HEAD) == (HEAD)->next)
 #define LIST_IS_HEAD(HEAD, POS) ((HEAD) == (POS))
