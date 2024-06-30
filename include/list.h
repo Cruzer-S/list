@@ -57,4 +57,6 @@ void list_add_new(struct list *prev, struct list *new, struct list *next);
 void list_add(struct list *head, struct list *new);
 void list_add_tail(struct list *head, struct list *new);
 
+void list_del(struct list *entry);
+
 #endif
